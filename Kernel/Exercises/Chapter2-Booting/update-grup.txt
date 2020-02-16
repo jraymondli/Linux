@@ -1,0 +1,4 @@
+sudo update-grub
+
+the file to be updated is: /boot/grub/grub.cfg
+
