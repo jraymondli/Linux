@@ -3,7 +3,7 @@
 #include <linux/moduleparam.h>
 
 static int number = 100;
-static char* word = "hello";
+static char* word = "hello"; /* you can not have space there */
 module_param(number, int, 0);
 MODULE_PARM_DESC(number, "An integer parameter to the module.");
 module_param(word, charp, 0000);
