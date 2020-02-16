@@ -2,7 +2,7 @@
 #include <linux/sched.h>
 #include <linux/moduleparam.h>
 
-static int number;
+static int number = 100;
 static char* word = "hello";
 module_param(number, int, 0);
 MODULE_PARM_DESC(number, "An integer parameter to the module.");
@@ -10,7 +10,7 @@ module_param(word, charp, 0000);
 MODULE_PARM_DESC(word, "A string prameter to the module.");
 
 int my_init_module(void) {
-    printk("Running in my_init_module.\n");
+    printk("Running in my_init_module with %d %s.\n", number, word);
     return 0;
 }
 
