@@ -1,0 +1,5 @@
+
+insmod lab.ko number=1234
+dmesg | tail -2 
+
+
