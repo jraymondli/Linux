@@ -1,5 +1,13 @@
 #include <linux/module.h>
 #include <linux/sched.h>
+#include <linux/moduleparam.h>
+
+static int number;
+static char* word = "hello";
+module_param(number, int, 0);
+MODULE_PARM_DESC(number, "An integer parameter to the module.");
+module_param(word, charp, 0000);
+MODULE_PARM_DESC(word, "A string prameter to the module.");
 
 int my_init_module(void) {
     printk("Running in my_init_module.\n");
@@ -16,4 +24,3 @@ module_exit(my_cleanup_module)
 
 MODULE_AUTHOR("Ray Li");
 MODULE_DESCRIPTION("Drill to get to the low lands");
-
