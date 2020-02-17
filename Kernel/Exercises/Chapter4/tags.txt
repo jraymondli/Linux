@@ -1,0 +1,10 @@
+
+vi -t sys_open
+
+:tn to find the next definition
+:ts to find the specific occurence among the definition candidates
+ 
+Ctrl-] to find the definition of what the cursor is pointing to
+Ctrl-T to get back
+
+
