@@ -1,0 +1,3 @@
+How ubuntu kernel source is fetched:
+
+git clone git://kernel.ubuntu.com/ubuntu/linux.git
