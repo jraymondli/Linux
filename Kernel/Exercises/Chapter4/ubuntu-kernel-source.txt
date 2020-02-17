@@ -1,3 +1,7 @@
 How ubuntu kernel source is fetched:
 
 git clone git://kernel.ubuntu.com/ubuntu/linux.git
+
+
+How ubuntu kernel source is compliled
+* In order to fix the complilation issue. We need to install gcc-8, and points gcc to it.
